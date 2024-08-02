@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Technical Documentation</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header><span class="js">JavaScript</span> Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Objects">Objects</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Frameworks">Frameworks</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#Other_Uses">Other Uses</a></li>
+            <div class="divider"></div>
+            <li><a class="nav-link" href="#More_Coming_Soon">More Coming Soon</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Welcome to the technical documentation page for the JavaScript programming language.</p>
+            <p>JavaScript is a versatile and widely-used programming language that powers the interactive elements and
+                dynamic functionality of websites.</p>
+            <p>In this documentation, you will find comprehensive information about JavaScript, including its syntax,
+                features, and best practices.</p>
+            <p>The page is divided into sections, each covering a specific topic related to JavaScript.</p>
+            <p>Whether you are a beginner learning the basics or an experienced developer looking for advanced concepts,
+                this documentation will serve as a valuable resource for your JavaScript journey.</p>
+        </section>
+
+        <section class="main-section" id="JavaScript_Basics">
+            <header>JavaScript Basics</header>
+            <p>JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript
+                specification.</p>
+            <p>It is a multi-paradigm language that supports object-oriented, imperative, and functional programming
+                styles.</p>
+            <p>JavaScript is the language of the web, and it is used to add interactivity to web pages.</p>
+            <p>To Print 'Hello, world!' using JS:</p>
+            <pre><code>console.log('Hello, World!');</code></pre>
+            <p>JavaScript has a rich set of built-in functions and methods that can be used to manipulate data, interact
+                with the browser, and perform various operations.</p>
+            <p>Some commonly used built-in functions include:</p>
+            <ul class="builtin-func">
+                <li>
+                    <pre><code>alert()</code></pre> displays an alert box with a specified message.
+                </li>
+                <li>
+                    <pre><code>prompt()</code></pre> displays a dialog box that prompts the user for input.
+                </li>
+                <li>
+                    <pre><code>confirm()</code></pre> displays a dialog box with a specified message and OK/Cancel
+                    buttons.
+                </li>
+                <li>
+                    <pre><code>parseInt()</code></pre> parses a string and returns an integer.
+                </li>
+                <li>
+                    <pre><code>parseFloat()</code></pre> parses a string and returns a floating-point number.
+                </li>
+                <li>
+                    <pre><code>isNaN()</code></pre> checks if a value is NaN (Not a Number).
+                </li>
+                <li>
+                    <pre><code>typeof()</code></pre> returns the type of a variable.
+                </li>
+            </ul>
+            <p>JavaScript also provides powerful control flow statements, such as:</p>
+            <ul>
+                <li><b>if</b> statement - executes a block of code if a specified condition is true.</li>
+                <li><b>else if</b> statement - executes a block of code if the first condition is false and the
+                    specified condition is true.</li>
+                <li><b>else</b> statement - executes a block of code if none of the specified conditions are true.
+                </li>
+                <li><b>switch</b> statement - selects one of many code blocks to be executed.</li>
+                <li><b>for</b> loop - repeats a block of code a specified number of times.</li>
+                <li><b>while</b> loop - repeats a block of code while a specified condition is true.</li>
+                <li><b>do...while</b> loop - repeats a block of code while a specified condition is true, and then
+                    tests the condition.</li>
+            </ul>
+            <p>These are just a few examples of the features and capabilities of JavaScript. As you continue to learn
+                and explore the language, you will discover many more powerful tools and concepts.</p>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables are used to store data values in JavaScript. A variable is a container for a value, which can
+                be of various types, such as numbers, strings, or objects. Variables are declared using the var, let, or
+                const keywords.</p>
+            <p>Here are some examples of variable declarations:</p>
+            <pre><code>var x = 5;</code></pre>
+            <pre><code>let name = 'John';</code></pre>
+            <pre><code>const PI = 3.14;</code></pre>
+            <p>Variables can be updated and reassigned with new values:</p>
+            <pre><code>x = 10;</code></pre>
+            <pre><code>name = 'Jane';</code></pre>
+            <p>Variables can also be used in HTML elements:</p>
+            <pre><code>&lt;p&gt;My name is &lt;span id="name"&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+            <p>JavaScript code can be used to update the value of the variable in the HTML element:</p>
+            <pre><code>document.getElementById('name').textContent = name;</code></pre>
+            <table>
+                <tr>
+                    <th>Variable</th>
+                    <th>Initial Value</th>
+                    <th>Updated Value</th>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>'John'</td>
+                    <td>'Jane'</td>
+                </tr>
+                <tr>
+                    <td>PI</td>
+                    <td>3.14</td>
+                    <td>No update</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of code that can be called and executed at any time. They are used to perform a
+                specific task or calculation. Functions can take parameters as input and return a value as output.
+                Functions are defined using the function keyword.</p>
+            <p>Here is an example of a function that adds two numbers:</p>
+            <pre><code>
+function addNumbers(a, b) {
+    return a + b;
+}
+            </code></pre>
+            <p>To call the function and get the result:</p>
+            <pre><code>
+var result = addNumbers(5, 3);
+console.log(result); // Output: 8
+            </code></pre>
+            <p>Functions can also be assigned to variables:</p>
+            <pre><code>
+var multiplyNumbers = function(a, b) {
+    return a * b;
+};
+            </code></pre>
+            <p>To call the function assigned to a variable:</p>
+            <pre><code>
+var result = multiplyNumbers(4, 2);
+console.log(result); // Output: 8
+            </code></pre>
+            <p>Functions can have default parameter values:</p>
+            <pre><code>
+function greet(name = 'Guest') {
+    console.log('Hello, ' + name + '!');
+}
+greet(); // Output: Hello, Guest!
+greet('John'); // Output: Hello, John!
+            </code></pre>
+            <p>Functions can also have a variable number of arguments using the rest parameter syntax:</p>
+            <pre><code>
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+var result = sum(1, 2, 3, 4, 5);
+console.log(result); // Output: 15
+            </code></pre>
+        </section>
+
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <p>Control structures are used to control the flow of a program. They allow you to execute different blocks
+                of code based on conditions or loops. Control structures include if statements, switch statements, and
+                loops such as for, while, and do-while loops.</p>
+            <h3>If Statement</h3>
+            <p>The if statement executes a block of code if a specified condition is true.</p>
+            <pre><code>
+var x = 10;
+if (x > 5) {
+    console.log('x is greater than 5');
+}
+            </code></pre>
+            <h3>Switch Statement</h3>
+            <p>The switch statement selects one of many code blocks to be executed.</p>
+            <pre><code>
+var day = 3;
+switch (day) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    default:
+        console.log('Other day');
+}
+            </code></pre>
+            <h3>For Loop</h3>
+            <p>The for loop repeats a block of code a specified number of times.</p>
+            <pre><code>
+for (var i = 0; i &lt; 5; i++) {
+    console.log('Iteration ' + i);
+}
+            </code></pre>
+            <h3>While Loop</h3>
+            <p>The while loop repeats a block of code while a specified condition is true.</p>
+            <pre><code>
+var count = 0;
+while (count &lt; 3) {
+    console.log('Count: ' + count);
+    count++;
+}
+            </code></pre>
+            <h3>Do-While Loop</h3>
+            <p>The do-while loop repeats a block of code while a specified condition is true, and then tests the
+                condition.</p>
+            <pre><code>
+var count = 0;
+do {
+    console.log('Count: ' + count);
+    count++;
+} while (count &lt; 3);
+            </code></pre>
+        </section>
+
+        <section class="main-section" id="Objects">
+            <header>Objects</header>
+            <p>Objects are a fundamental part of JavaScript and are used to store collections of data and functionality.
+                Objects are created using the object literal syntax or the new Object() constructor.</p>
+            <h3>Object Literal Syntax</h3>
+            <pre><code>
+var person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+            </code></pre>
+            <p>Accessing object properties:</p>
+            <pre><code>
+console.log(person.name); // Output: John
+person.greet(); // Output: Hello, John
+            </code></pre>
+            <h3>Object Constructor</h3>
+            <pre><code>
+var person = new Object();
+person.name = 'John';
+person.age = 30;
+person.greet = function() {
+    console.log('Hello, ' + this.name);
+};
+            </code></pre>
+            <p>JavaScript also supports constructor functions, which are used to create objects with a similar
+                structure:</p>
+            <pre><code>
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        console.log('Hello, ' + this.name);
+    };
+}
+var john = new Person('John', 30);
+john.greet(); // Output: Hello, John
+            </code></pre>
+            <p>Objects can also have methods, which are functions that belong to an object:</p>
+            <pre><code>
+var car = {
+    brand: 'Toyota',
+    model: 'Camry',
+    start: function() {
+        console.log('Starting the car');
+    }
+};
+car.start(); // Output: Starting the car
+            </code></pre>
+        </section>
+
+        <section class="main-section" id="Frameworks">
+            <header>Frameworks</header>
+            <p>JavaScript has a wide range of frameworks and libraries that simplify and enhance web development. Some
+                popular JavaScript frameworks include:</p>
+            <ul>
+                <li><strong>React:</strong> A JavaScript library for building user interfaces. It allows developers to
+                    create reusable UI components and efficiently update the user interface based on changes in the
+                    application state.</li>
+                <li><strong>Angular:</strong> A comprehensive framework for building dynamic web applications. It
+                    provides a complete set of tools and features for developing single-page applications (SPAs) with a
+                    strong focus on declarative programming and dependency injection.</li>
+                <li><strong>Vue.js:</strong> A progressive framework for building user interfaces. It is designed to be
+                    incrementally adoptable, allowing developers to start with small features and gradually integrate it
+                    into larger projects.</li>
+                <li><strong>Node.js:</strong> A runtime environment that allows JavaScript to be used on the
+                    server-side. It provides a non-blocking, event-driven architecture that enables scalable and
+                    high-performance applications.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Other_Uses">
+            <header>Other Uses</header>
+            <p>JavaScript is not limited to web development. It can be used for various other purposes, including:</p>
+            <ul>
+                <li>Building mobile applications using frameworks like <strong>React Native</strong> and
+                    <strong>Ionic</strong>.
+                </li>
+                <li>Creating desktop applications with frameworks like <strong>Electron</strong></li>
+                <li>Developing server-side applications with <strong>Node.js</strong>.</li>
+                <li>Automating tasks and scripting with tools like <strong>Gulp</strong> and <strong>Grunt</strong>.
+                </li>
+                <li>Game development using libraries like <strong>Three.js</strong> and <strong>Phaser</strong>.</li>
+                <li>Data visualization with libraries like <strong>D3.js</strong> and <strong>Chart.js</strong>.</li>
+            </ul>
+            <p>JavaScript's versatility and widespread adoption make it a powerful language for a wide range of
+                applications beyond traditional web development.</p>
+        </section>
+
+        <section class="main-section" id="More_Coming_Soon">
+            <header>More Coming Soon</header>
+            <p>Stay tuned for more updates and additions to this documentation. We have exciting features and topics
+                coming soon!</p>
+        </section>
+    </main>
+</body>
+
+</html>
